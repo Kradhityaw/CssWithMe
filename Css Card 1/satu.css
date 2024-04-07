@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+    background-color: #222831;
+}
+
+.header {
+    color: #ffffff;
+    text-align: center;
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+.container {
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card-container {
+    overflow: hidden;
+    margin: 0 15px;
+    /* padding: 15px; */
+    height: 350px;
+    width: 250px;
+    background-image: url(mobil.jpeg);
+    background-size: 100%;
+    border-radius: 20px;
+    /* transition: box-shadow 0.4s linear; */
+    transition: 0.4s linear;
+    background-position: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-repeat: no-repeat;
+}
+
+.card-container:hover {
+    background-size: 125%;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* filter: blur(20px); */
+    /* box-shadow: 0 0 200px rgba(0,0,0,0.9) inset; */
+}
+
+.card-header h3 {
+    margin: 15px 15px 0 15px;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.card-header h1 {
+    margin: 0 15px;
+    color: #ffffff;
+    margin-bottom: 18px;
+}
+
+.card-desc {
+    padding: 15px 15px 15px 15px;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 12px;
+    background-color: #31363F;
+    /* backdrop-filter: blur(2px); */
+}
+
+.card-container:hover .card-body {
+    height: 74%;
+}
+
+.card-body {
+    transition: 0.5s ease-in-out;
+    height: 110%;
+    display: flex;
+    align-items: end;
+    overflow: hidden;
+}
