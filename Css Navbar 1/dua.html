@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav 1</title>
+    <link rel="stylesheet" href="dua.css">
+</head>
+<body>
+    <nav>
+        <h1>Navbar.</h1>
+        <ul class="muncul-ul">
+            <li class="muncul-li"><a href="" class="muncul-a">Home</a></li>
+            <li class="muncul-li"><a href="" class="muncul-a">About</a></li>
+            <li class="muncul-li"><a href="" class="muncul-a">Contact</a></li>
+            <li class="muncul-li"><a href="" class="muncul-a">Service</a></li>
+            <li class="muncul-li"><a href="" class="muncul-a">Credit</a></li>
+        </ul>
+        <a href="#" class="login-btn">Login</a>
+        <img src="test.svg" alt="" class="img" id="img">
+        <div class="bungkus bung" id="bungkus">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Service</a></li>
+                <li><a href="">Credit</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Simple Navbar.</h1>
+        <h3>Using HTML, CSS, JS</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi qui soluta, magni consequatur eius consequuntur aliquam adipisci ex vel aliquid omnis dolores laboriosam delectus totam repellendus minus sequi explicabo enim?</p>
+        <button>Learn More!</button>
+    </div>
+    <script>
+        let img = document.getElementById("img")
+        let bungkus = document.getElementById("bungkus")
+        let bol = true
+        img.addEventListener("click", () => {
+            if (bol == true) {
+                bungkus.style.width = "60%"
+                bol = false
+            }
+            else {
+                bungkus.style.width = "0%"
+                bol = true
+            }
+        })
+    </script>
+</body>
+</html>
